@@ -5,6 +5,7 @@ import { RoomContext } from "../Context";
 
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
+import StyledHero from "../components/StyledHero";
 
 import defaultBcg from "../images/room-1.jpeg";
 
@@ -48,13 +49,15 @@ export default class SingleRoom extends Component {
     } = room;
 
     return (
-      <Hero hero="roomsHero">
-        <Banner title={`${name} room`}>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
-          </Link>
-        </Banner>
-      </Hero>
+      <>
+        <StyledHero img={images[0]}>
+          <Banner title={`${name} room`}>
+            <Link to="/rooms" className="btn-primary">
+              back to rooms
+            </Link>
+          </Banner>
+        </StyledHero>
+      </>
     );
   }
 }
