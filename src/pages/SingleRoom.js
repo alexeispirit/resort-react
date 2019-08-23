@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import { RoomContext } from "../Context";
 
-import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import StyledHero from "../components/StyledHero";
 
